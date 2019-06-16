@@ -5,6 +5,7 @@ before_script:
     - sudo apt-get install apache2
 before_install:
   - mysql -e 'CREATE DATABASE myapp_test;'
+  - mysql --defaults-extra-file=mysqlParameters myapp_test -e "$(cat mysqlScript)"
 services:
   - mysql
 script:
