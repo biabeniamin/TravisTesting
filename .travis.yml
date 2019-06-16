@@ -4,6 +4,7 @@ before_script:
     - sudo chmod 777 build.sh
 before_install:
   - mysql -e 'CREATE DATABASE myapp_test;'
+  - sudo apt-get install phpunit
 services:
   - mysql
 script:
