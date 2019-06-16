@@ -3,5 +3,9 @@ language: php
 before_script:
     - sudo chmod 777 build.sh
     - sudo apt-get install apache2
+before_install:
+  - mysql -e 'CREATE DATABASE myapp_test;'
+services:
+  - mysql
 script:
   - ./build.sh
