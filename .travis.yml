@@ -4,7 +4,6 @@ before_script:
     - sudo chmod 777 build.sh
 before_install:
   - mysql -e 'CREATE DATABASE myapp_test;'
-  - mysql --defaults-extra-file=mysqlParameters myapp_test -e "$(cat mysqlScript)"
 services:
   - mysql
 script:
