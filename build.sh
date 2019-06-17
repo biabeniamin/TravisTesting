@@ -24,6 +24,9 @@ curl localhost/Accounts.php?cmd=getAccounts
 echo "add new account"
 curl localhost/Accounts.php?cmd=addAccount&email=Test&password=Test&balance=0
 curl localhost/Accounts.php?cmd=testAccounts
+curl localhost/Accounts.php?cmd=testAccounts
+curl localhost/Accounts.php?cmd=testAccounts
+curl localhost/Accounts.php?cmd=testAccounts
 echo "account added"
 curl localhost/Accounts.php?cmd=getAccounts
 
