@@ -13,6 +13,8 @@ sudo service apache2 restart
 sudo rm /var/www/html/index.html
 sudo cp index.php /var/www/html/index.php
 sudo cp Accounts.php /var/www/html/Accounts.php
+sudo cp Helpers.php /var/www/html/.
+sudo cp DatabaseOperations.php /var/www/html/.
 sudo cp Models /var/www/html/. -r
 
 
