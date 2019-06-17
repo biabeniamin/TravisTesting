@@ -10,5 +10,4 @@ before_install:
 services:
   - mysql
 script:
-  - phpunit --debug
   - ./build.sh
