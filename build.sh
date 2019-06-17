@@ -7,4 +7,6 @@ cat mysqlScript
 
 
 sudo apt install apache2
+apt-get install php5 php-pear php5-mysql
 wget localhost
+cat index.html
