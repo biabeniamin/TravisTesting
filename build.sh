@@ -7,7 +7,7 @@ cat mysqlScript
 
 
 sudo apt install apache2 -y
-sudo apt-get install php -y
+sudo apt-get install php libapache2-mod-php -y
 sudo apt-get install php-mysql -y
 sudo service apache2 restart
 sudo rm /var/www/html/index.html
