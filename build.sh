@@ -13,4 +13,3 @@ sudo service apache2 restart
 sudo rm /var/www/html/index.html
 sudo cp index.php /var/www/html/index.php
 curl localhost
-cat index.html
