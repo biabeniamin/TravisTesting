@@ -29,5 +29,6 @@ curl localhost/Accounts.php?cmd=testAccounts
 curl localhost/Accounts.php?cmd=testAccounts
 echo "account added"
 curl localhost/Accounts.php?cmd=getAccounts
+curl localhost/Accounts.php?cmd=getLastAccount
 
 echo "done getting message from server"
