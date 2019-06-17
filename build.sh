@@ -21,5 +21,9 @@ sudo cp Models /var/www/html/. -r
 echo "getting messagfe from server"
 curl localhost
 curl localhost/Accounts.php?cmd=getAccounts
+echo "add new account"
+curl localhost/Accounts.php?cmd=addAccount&email=Test&password=Test&balance=0
+echo "account added"
+curl localhost/Accounts.php?cmd=getAccounts
 
 echo "done getting message from server"
