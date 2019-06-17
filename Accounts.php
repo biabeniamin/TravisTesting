@@ -167,6 +167,12 @@ if(CheckGetParameters(["cmd"]))
 		$database = new DatabaseOperations();
 			echo json_encode(GetAccounts($database));
 	}
+	
+	if("testAccounts" == $_GET["cmd"])
+	{
+		$database = new DatabaseOperations();
+			TestAddAccount($database);
+	}
 
 	if("getLastAccount" == $_GET["cmd"])
 	{
